@@ -1,3 +1,5 @@
+//this turns on the led when the button is pushed, and turns it off again when the button is pushed.
+
 const int buttonPin = 2;
 const int ledPin = 8;
 
@@ -6,14 +8,13 @@ int lastButtonState=HIGH;
 
 
 void setup() {
- // put your setup code here, to run once:
 pinMode(ledPin, OUTPUT);
 pinMode(buttonPin, INPUT_PULLUP);
   Serial.begin(9600); 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
 int buttonState = digitalRead(buttonPin);
 
 if (lastButtonState == HIGH && buttonState == LOW){
