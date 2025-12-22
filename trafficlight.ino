@@ -1,3 +1,6 @@
+// this is a basic "traffic light" pattern that makes a red, yellow and green led light up for 5 seconds each
+
+
 void setup() {
   int red = 13, yellow = 12, green = 11;
   pinMode(13, OUTPUT);
