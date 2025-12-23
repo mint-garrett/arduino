@@ -46,15 +46,15 @@ void loop() {
 
     case 2: //all lights flicker randomly and independently  
     unsigned long now = millis();
-    if (now - redTimer > random(200,800)) {
+    if (now - redTimer > random(500,1000)) {
       redState = !redState;
       digitalWrite(red, redState);
       redTimer = now;}  
-    if (now - greenTimer > random(200,800)) {
+    if (now - greenTimer > random(500,1000)) {
       greenState = !greenState;
       digitalWrite(green, greenState);
       greenTimer = now;}    
-    if (now - whiteTimer > random(200,800)) {
+    if (now - whiteTimer > random(500,1000)) {
       whiteState = !whiteState;
       digitalWrite(white,whiteState);
       whiteTimer = now;}
