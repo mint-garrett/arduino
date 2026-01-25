@@ -1,3 +1,5 @@
+// this makes 3 leds connected to their respective pins brighten sequentially. i wanted to try out the pwm pins
+
 void setup() {
   // int pin vars and set them as outputs
   int pin_3 = 3;
