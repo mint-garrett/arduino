@@ -50,11 +50,11 @@ void loop() {
       redState = !redState;
       digitalWrite(red, redState);
       redTimer = now;}  
-    if (now - greenTimer > random(500,1000)) {
+    else if (now - greenTimer > random(500,1000)) {
       greenState = !greenState;
       digitalWrite(green, greenState);
       greenTimer = now;}    
-    if (now - whiteTimer > random(500,1000)) {
+    else if (now - whiteTimer > random(500,1000)) {
       whiteState = !whiteState;
       digitalWrite(white,whiteState);
       whiteTimer = now;}
